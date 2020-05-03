@@ -34,8 +34,8 @@ fun main() {
        basta sabermos o contexto em cada qual é utilizada. */
 
     //Instanciando uma classe no Kotlin:
-    val p4: pessoa3 = pessoa3("William", 1994, 25, "branco")
-    val p3: pessoa3 = pessoa3("William", 1994, 25)
+    val p4: pessoa3 = pessoa3("Marcos", 1992, 27, "branco")
+    val p3: pessoa3 = pessoa3("João", 1993, 26)
     val p1: pessoa3 = pessoa3("William", 1994)
     val p2: pessoa3 = pessoa3("Tony")
     println(p1.nome)
