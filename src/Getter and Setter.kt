@@ -33,5 +33,7 @@ fun main() {
     var m:Maquina = Maquina("Hyundai")
     println(m.nucleos)
 
+    prioridade.ALTA
+
 
 }
