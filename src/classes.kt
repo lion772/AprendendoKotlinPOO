@@ -49,4 +49,7 @@ fun main() {
     /* Quando se instancia uma classe, você tem um objeto, criando uma classe
     *  com os valores que você irá passar como parâmetro.  */
 
+    /* Os getters and setters impedem que uma variável seja acessada diretamente, muito
+    * falado em encapsulamento. Seria a mesma coisa se existisse uma classe Saldo ou
+    * conta corrente onde vc pudesse alterar seu saldo para 1 milhão  */
 }
