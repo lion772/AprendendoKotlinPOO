@@ -10,11 +10,28 @@
     * funciona da mesma forma, basta escrever o objeto e o nome da variável a ser setada
     * "pessoa.nome = "william"" */
 
-class Maquina(var marca: String)
+class Maquina(var marca: String) {
 //Não é preciso colocar os getters and setters, o kotlin já sabe, então assim que instanciar qualquer classe, já pode usar o objeto.get/set + nome da variável
+//PORÉM caso queira deixar seu código bem específico para o get and set, use o "field":
+
+    var nucleos: Int = 0
+        get() {
+            println("O get foi acionado")
+            return field
+        }
+        set(value) {
+            println("O set foi acionado")
+            field = value
+        }
+}
 
 fun main() {
 
-    var gettersSetters: GettersSetters = GettersSetters("william", 25)
-    println(gettersSetters.idade)
+    /*var gettersSetters: GettersSetters = GettersSetters("william", 25)
+    println(gettersSetters.idade)*/
+
+    var m:Maquina = Maquina("Hyundai")
+    println(m.nucleos)
+
+
 }
