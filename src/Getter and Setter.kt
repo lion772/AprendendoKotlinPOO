@@ -23,6 +23,16 @@ class Maquina(var marca: String) {
             println("O set foi acionado")
             field = value
         }
+    
+    fun ligar(){
+
+    }
+    fun processar(){
+
+    }
+    fun desligar(){
+
+    }
 }
 
 fun main() {
@@ -32,8 +42,18 @@ fun main() {
 
     var m:Maquina = Maquina("Hyundai")
     println(m.nucleos)
-
     Prioridade1.ALTA
+    //With é outro grande avanço do kotlin, onde você pode acionar todas as funções de uma mesma classe:
+    with(m){
+        ligar()
+        processar()
+        desligar()
+    }
+    //Seroa a mesma coisa que acessar as funções pelo objeto "m":
+    m.ligar()
+    m.processar()
+    m.desligar()
+
 
 
 }
