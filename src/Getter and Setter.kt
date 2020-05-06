@@ -40,7 +40,7 @@ fun main() {
     /*var gettersSetters: GettersSetters = GettersSetters("william", 25)
     println(gettersSetters.idade)*/
 
-    var m:Maquina = Maquina("Hyundai")
+    var m:Maquina = Maquina("Hyundt stai")
     println(m.nucleos)
     Prioridade1.ALTA
     //With é outro grande avanço do kotlin, onde você pode acionar todas as funções de uma mesma classe:
