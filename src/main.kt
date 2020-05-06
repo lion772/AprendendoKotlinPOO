@@ -8,14 +8,25 @@
 *   */
 
 open class Machine (val marca: String){
-    fun minhaMarca(){
+    open fun minhaMarca(){
         println("Minha marca é $marca")
     }
 }
 
 class Computador (marca: String, val nucleos: Int) : Machine(marca){
+    override fun minhaMarca() {
+        val id = 10 //override serve para caso vc queira adicionar uma nova informação na função que vc está sobrescrevendo
+        super.minhaMarca() //super se refere à classe Pai e à função da mesma
+    }
+
     fun ligar(){}
     fun processar(){}
+
+    /* Sobrecarca - São métodos com mesmo nome, só que com tipos e/ou quantidade de
+     parâmetros diferentes. */
+    fun overload(i: Int) = println("Overload 1")
+    fun overload(i: Int, s: String) = println("Overload 2")
+    fun overload(i: String) = println("Overload 3")
 }
 
 fun main() {
@@ -25,5 +36,6 @@ fun main() {
         ligar()
         processar()
         minhaMarca()
+        overload("") //Dependendo dos parâmetros que colocar, chamará uma função diferente
     }
 }
