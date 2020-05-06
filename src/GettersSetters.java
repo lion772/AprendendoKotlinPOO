@@ -25,7 +25,7 @@ public class GettersSetters {
     }
 
     public static void main(String[] args){
-        Maquina maquina = new Maquina("hyundai");
+        Maquin maquina = new Maquin("hyundai");
         maquina.setMarca("Honda");
         maquina.getMarca();
     }

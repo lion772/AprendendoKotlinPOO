@@ -10,7 +10,7 @@
     * funciona da mesma forma, basta escrever o objeto e o nome da variável a ser setada
     * "pessoa.nome = "william"" */
 
-class Maquina(var marca: String) {
+open class Maquina(var marca: String) {
 //Não é preciso colocar os getters and setters, o kotlin já sabe, então assim que instanciar qualquer classe, já pode usar o objeto.get/set + nome da variável
 //PORÉM caso queira deixar seu código bem específico para o get and set, use o "field":
 
@@ -40,7 +40,7 @@ fun main() {
     /*var gettersSetters: GettersSetters = GettersSetters("william", 25)
     println(gettersSetters.idade)*/
 
-    var m:Maquina = Maquina("Hyundt stai")
+    var m:Maquin = Maquin("Hyundt stai")
     println(m.nucleos)
     Prioridade1.ALTA
     //With é outro grande avanço do kotlin, onde você pode acionar todas as funções de uma mesma classe:
