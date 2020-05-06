@@ -27,6 +27,10 @@ class Computador (marca: String, val nucleos: Int) : Machine(marca){
     fun overload(i: Int) = println("Overload 1")
     fun overload(i: Int, s: String) = println("Overload 2")
     fun overload(i: String) = println("Overload 3")
+
+    /* Modificador de visibilidade - impede que algo esteja visível fora da classe
+    * e possa ser utilizado por outros métodos que estejam chamando a classe  */
+    private fun validade(){}
 }
 
 fun main() {
